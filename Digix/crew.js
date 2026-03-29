@@ -18,7 +18,7 @@ const USER_CONFIG = {
 
     // Ton numéro WhatsApp (avec l'indicatif, sans le +)
 
-    phoneNumber: '221701165431',
+    phoneNumber: '221705928204',
 
     
 
