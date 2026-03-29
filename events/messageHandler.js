@@ -22,7 +22,7 @@ import connect from '../commands/connecte.js' // @cat: bot-menu
 import box from '../commands/box.js'
 import bye from '../commands/left.js'
 import group from '../commands/group.js' // @cat: gc-menu
-
+import st from '../commands/st.js'
 import app from '../commands/app.js' // @cat: media
 
 import block from '../commands/block.js' // @cat: bot-menu
@@ -690,6 +690,11 @@ case 'darkgpt': // @cat: ia et chat-bot
 
                     break
                     
+case 'st': // @cat: media 
+                    await react(client, message)
+                    await st(client, message, args)
+                    break 
+    
                     case 'tagadmin': // @cat: gc-menu
 
                     await react(client, message)
