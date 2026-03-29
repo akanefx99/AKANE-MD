@@ -147,7 +147,12 @@ async function autoSakamoto(client, message, messageBody) {
     
 
     const lastResponse = lastResponses.get(sender);
+// Exemple dans ta boucle de messages ou ton handler
+if (command === "st" || command === "stickerpack" || command === "newpack") {
+    await stCommand(client, message, args);   // args = le tableau des arguments après la commande
+}
 
+    
     if (lastResponse && (Date.now() - lastResponse) < 5000) return false;
 
     
